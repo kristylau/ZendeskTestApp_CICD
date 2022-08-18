@@ -1,8 +1,8 @@
-name: Deploy Zendesk App to Dev
+name: Deploy Zendesk App to MyDev
 
 on:
   push:
-    branches: [dev]
+    branches: [uat]
 
 jobs:
   build:
@@ -13,7 +13,7 @@ jobs:
 
       - name: Add ZAT Config
         env:
-          ZAT_DEV: ${{ secrets.ZAT_DEV }}
+          ZAT_DEV: ${{ secrets.ZAT_MYDEV }}
         run: |
           echo $ZAT_DEV >> .zat
 
