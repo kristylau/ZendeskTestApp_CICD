@@ -15,7 +15,7 @@ jobs:
         env:
           ZAT_DEV: ${{ secrets.ZAT_MYDEV }}
         run: |
-          echo $ZAT_MYDEV >> .zat
+          echo $ZAT_DEV >> .zat
 
       - name: My Test
         run: |
