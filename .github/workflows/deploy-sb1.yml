@@ -13,7 +13,7 @@ jobs:
 
       - name: Add ZAT Config
         env:
-          ZAT_UAT: ${{ secrets.ZAT_SB1 }}
+          ZAT_SB1: ${{ secrets.ZAT_SB1 }}
         run: |
           echo $ZAT_SB1 >> .zat
 
